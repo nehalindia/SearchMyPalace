@@ -1,0 +1,6 @@
+<option>Hospital
+<option>Medicals
+<option>Pathlab
+<option>Clinic
+
+					

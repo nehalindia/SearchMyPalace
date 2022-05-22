@@ -1,0 +1,8 @@
+<option >Education
+ <option>Health
+ <option>Tour & travels
+  <option>Entertainment
+ <option>Shop & E-COMMERCE
+ <option>Maintainence
+  <option>Emergency
+<option value="0" disabled selected="selected">Select Location Category

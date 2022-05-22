@@ -1,0 +1,7 @@
+<option>SHOPS
+<option>MALLS
+<option>MARKETS
+<option>BANKS
+<option>ATM
+<option>MONEY TRANSFER
+<option>Customer service center

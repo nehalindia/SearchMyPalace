@@ -1,0 +1,6 @@
+<option>Colleges
+<option>School
+<option>University
+<option>Institute
+<option>Coaching
+<option>Maintainence

@@ -1,0 +1,6 @@
+<option>Bus
+<option>Train
+<option>Airlines
+<option>Cabs
+<option>Tour booking
+<option>Hotels
