@@ -1,0 +1,26 @@
+#searchmap {
+		
+		height: 740px;
+		margin-top: 10px;
+		border-radius: 10px;
+    	border: 2px solid #73AD21;
+    }
+.topc{
+	background-color:Cornsilk ;
+	color:CadetBlue;
+}
+
+#locationtype{
+	border:0.5px solid;
+	border-radius: 5px;
+	padding: 7px 0px 7px 5px;	
+}
+#locationtype{
+	width: 100%;
+}
+
+#locationdescription {
+   
+    height: 550px;
+    overflow: auto;
+}
