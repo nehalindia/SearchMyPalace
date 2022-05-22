@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Save My Location</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="home/logo.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="CSS/Style.css" type="text/css">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script type="text/javascript" src="JS/distancematrix.js"></script>
+  <script type="text/javascript" src="JS/map.js"></script>
+  
+  <script src="JS/jquery-1.12.1.js"></script>
+  <!--<script type="text/javascript" src="JS/submit.js"></script>-->
+  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="JS/datalist.js" type="text/javascript"></script>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top topc">
+  <div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+  <a class="navbar-brand" href="index.html"><img src="home\logo.png" class="yahoo img-responsive"></a></div>
+  <div class="collapse navbar-collapse" id="myNavbar1" style="margin-top:20px;">
+    <ul class="nav navbar-nav navabar-middle">
+        <li><h4>Technology change's the world</h4></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.facebook.com/dilkidastan7/?ref=hl" target="blank"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+          <li><a href="https://twitter.com/mdnehalkazmy" target="blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+          <li><a href="http://www.skype.com/en/" target="blank"><i class="fa fa-skype fa-2x"></i></a></li>
+          <li><a href="https://plus.google.com/u/0/+MDNEHALUDDINkazmy/posts" target="blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
+        </ul>
+  </div>
+  </div></nav>
+  
+	
+	<div class="container-fluid" style="margin-top:45px;">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 input-form">
+				<h4 id="label">Location</h4>
+				<form method="post" action="addLocation.php" enctype="multipart/form-data">
+					<div class="form-group">
+						<input type="text" name="name" placeholder="Name" id="name"/>
+					</div>
+					<div class="form-group">
+						<input type="text" name="address" placeholder="Address" id="address"/>
+					</div>
+					<div class="form-group">
+						<input type="text" name="contact" placeholder="Contact No" id="contact"/>
+					</div>
+					<div class="form-group">
+						<select id="locationtype" name="category">
+						</select>
+					</div>	
+					<div class="form-group">
+						<select id="Edu_value" name="sub_category">
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="latlng" id="label">Click Your Location on MAP</label>
+					</div>
+					<div class="form-group">
+						<input type="text" name="lati" id="lati" placeholder="Latitude"/>	
+					</div>
+					<div class="form-group">
+						<input class="box" type="text" name="longi" id="longi" placeholder="Longitude"/>
+					</div>
+					<div class="form-group">
+						 <textarea class="form-control" rows="6" id="description" name="description" placeholder="Description of Your Location"></textarea>
+					</div>
+					<div class="form-group">
+						<h4>Upload the image related to the location or <a href="#">Skip</a></h4>
+						<input type="file" name="myimage" accept="image/x-png, image/gif, image/jpeg, image/jpg" id="my"/>
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn" value="Submit Button" name="submit" id="submit">
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
+				<div id="map"></div>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
